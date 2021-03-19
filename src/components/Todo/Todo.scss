@@ -1,0 +1,55 @@
+
+.todo {
+    border-bottom: 1px solid rgba(49, 49, 49, 0.253);
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .checkbox {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid rgb(92, 92, 92);
+        margin: 15px;
+
+        position: relative;
+    }
+    
+    &:hover {
+        button {
+            display: block!important;
+        }
+    }
+
+    .label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(12, 219, 12);
+    }
+
+    .not-check {
+        display: none!important;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+        color: red;
+
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+    }
+    
+    input{
+        font-size: 18px;
+        flex: 1;
+        background-color: transparent;
+        padding: 18px;
+    }
+}
